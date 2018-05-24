@@ -24,13 +24,13 @@ class Triangle
       s1 == s2 && s1 == s3
         self.kind = :equilateral
 
-    elsif 
+    elsif
       s1 == s2 || s1 == s3 || s2 == s3
       self.kind = :isosceles
 
     else
-      
-      
+
+      self.kind = :scalene
 
       :scalene
 
