@@ -19,11 +19,11 @@ class Triangle
         puts error.message
       end
     elsif s1 == s2 && s1 == s3
-      self.kind = :equilateral
+      self.kind = :equilateral #all sides are the same length
     elsif s1 == s2 || s1 == s3 || s2 == s3
-      self.kind = :isosceles
+      self.kind = :isosceles # has two sides of equal length
     else
-      self.kind = :scalene
+      self.kind = :scalene #all sides are unwqual length
     end
   end
 end
