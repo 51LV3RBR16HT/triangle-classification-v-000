@@ -8,11 +8,15 @@ class Triangle
     @s3 = s3 #instance variable = arguement
   end
 
-  def kind
+  # Triangle rules: The sum of the lengths of any two sides of a triangle
+  # always exceeds the length of the third side. This is a principle known
+  #as the triangle inequality.
 
-    # Triangle rules: The sum of the lengths of any two sides of a triangle
-    # always exceeds the length of the third side. This is a principle known
-    #as the triangle inequality.
+  def kind
+    if (@s1 + @s2) <= @s3 || (@s2 + @s3) <= @s1 || (@s3 + @s1) <= @s2
+      raise TriangleError
+
+
   end
 
 
