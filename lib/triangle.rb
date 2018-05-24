@@ -41,3 +41,5 @@ class Triangle
       puts "Note a triangle."
     end
   end
+
+end
