@@ -19,11 +19,11 @@ class Triangle
           puts error.message
         end
     elsif s1 == s2 && s1 == s3
-        self.kind = :equilateral
+      self.kind = :equilateral
     elsif s1 == s2 || s1 == s3 || s2 == s3
-        self.kind = :isosceles
+      self.kind = :isosceles
     else
-        self.kind = :scalene
+      self.kind = :scalene
     end
   end
 end
