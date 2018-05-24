@@ -40,6 +40,4 @@ class Triangle
     def message
       puts "Note a triangle."
     end
-  end
-
 end
