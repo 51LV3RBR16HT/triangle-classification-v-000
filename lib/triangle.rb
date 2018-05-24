@@ -7,7 +7,7 @@ class Triangle
     @s2 = s2
     @s3 = s3
   end
-  
+
   def kind
     if (s1 * s2 * s3) == 0 || (s1 + s2) <= s3 || (s2 + s3) <= s1 || (s3 + s1) <= s2
       begin
@@ -24,8 +24,8 @@ class Triangle
   end
 end
 
-class TriangleError < StandardError
-  def message
-    puts "Not a triangle."
-  end
-end
+# class TriangleError < StandardError
+#   def message
+#     puts "Not a triangle."
+#   end
+# end
