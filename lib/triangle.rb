@@ -5,17 +5,18 @@ class Triangle
   def initialize(s1, s2, s3)
     @s1 = s1
     @s2 = s2
-    @s3 = s3 
+    @s3 = s3
   end
 
   # Triangle rules: The sum of the lengths of any two sides of a triangle
   # always exceeds the length of the third side. This is a principle known
-  #as the triangle inequality.
+  # as the triangle inequality.
 
   def kind
     if (s1 * s2 * s3) == 0 || (s1 + s2) <= s3 || (s2 + s3) <= s1 || (s3 + s1) <= s2
       begin
         raise TriangleError
+      rescue TriangleError => error
         puts error.message
       end
     elsif s1 == s2 && s1 == s3
