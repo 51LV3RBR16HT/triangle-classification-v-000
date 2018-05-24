@@ -13,7 +13,8 @@ class Triangle
   #as the triangle inequality.
 
   def kind
-    if (@s1 + @s2) <= @s3 || (@s2 + @s3) <= @s1 || (@s3 + @s1) <= @s2
+    if (s1 * s2 * s3) == 0 || (@s1 + @s2) <= @s3 || (@s2 + @s3) <= @s1 || (@s3 + @s1) <= @s2
+
       raise TriangleError
 
 end
