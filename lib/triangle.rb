@@ -21,9 +21,17 @@ class Triangle
       end
 
     elsif
+      s1 == s2 && s1 == s3
+        self.kind = :equilateral
 
-      :equilateral
-      :isosceles
+    elsif 
+      s1 == s2 || s1 == s3 || s2 == s3
+      self.kind = :isosceles
+
+    else
+      
+      
+
       :scalene
 
 end
