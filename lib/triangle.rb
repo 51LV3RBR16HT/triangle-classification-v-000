@@ -22,6 +22,10 @@ class Triangle
 
     elsif
 
+      :equilateral
+      :isosceles
+      :scalene
+
 end
   end
 
