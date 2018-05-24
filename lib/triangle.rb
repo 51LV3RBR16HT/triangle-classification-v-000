@@ -38,6 +38,6 @@ end
 
   class TriangleError < StandardError
     def message
-      #error code
+      puts "Note a triangle."
     end
   end
