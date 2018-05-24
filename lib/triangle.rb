@@ -8,4 +8,6 @@ class Triangle
     @s3 = s3 #instance variable = arguement
   end
 
+  def kind 
+
 end
