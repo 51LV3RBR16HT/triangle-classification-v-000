@@ -8,6 +8,13 @@ class Triangle
     @s3 = s3 #instance variable = arguement
   end
 
-  def kind 
+  def kind
+
+  end
+
+
+  class TriangleError < StandardError
+    # triangle error code
+  end
 
 end
